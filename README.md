@@ -1,6 +1,4 @@
-# ABC
-
-## Abundance Sovereign Stack
+# ABC - Abundance Sovereign Stack
 
 ### Prerequisites
 
@@ -14,8 +12,8 @@
 	2.	Click “Generate new token (classic)” (or use fine-grained tokens if preferred)
 	3.	Give it a name and expiration date
 	4.	Under Scopes, select:
-	•	read:packages (required to pull images)
-	•	repo
+	    •	read:packages (required to pull images)
+	    •	repo
 	5.	Click Generate token
 	6.	Copy and save the token somewhere safe
 
