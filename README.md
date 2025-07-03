@@ -1,5 +1,10 @@
 # ABC - Abundance Sovereign Stack
 
+ABC Stack follows the same design and architecture an Ethereum, using Engine API. Each ABC node requires the deployment of two components:
+- ABC (Consensus): Receives new blocks and verifies validity
+- XYZ (Execution): Executes EVM transactions
+
+
 ### Prerequisites
 
 - GitHub Personal Access Token (PAT)
@@ -73,6 +78,7 @@ docker run -d \
   -p 8449:8449 \
   -p 8450:8450 \
   -p 8451:8451 \
+  -p 30303:30303 \
   ghcr.io/gelatodigital/xyz node \
   --chain /genesis.json \
   --datadir /data \
@@ -82,8 +88,7 @@ docker run -d \
   --http.port "8449" \
   --ws \
   --ws.addr "0.0.0.0" \
-  --ws.port "8450 \
-  --http.api eth,net,admin \
+  --ws.port "8450" \
   --authrpc.addr "0.0.0.0" \
   --authrpc.port "8451"
   --authrpc.jwtsecret /jwt.hex \
