@@ -28,9 +28,9 @@ docker run -d \
   --execution.endpoint "http://0.0.0.0:8451" \
   --http \
   --log.format json \
-  --feed.ingress wss://feed.basecamp.t.raas.gelato.cloud \
-  --sequencer.pubkey 38d7bc04511f874ee18935e09284384c1b85513bdb975799d280b626fd86e5f7 \
-  --da.endpoint public-celestia-mocha4-consensus.numia.xyz:26657
+  --feed.ingress wss://feed.camp.raas.gelato.cloud \
+  --sequencer.pubkey 62fbcb55243d1523595aa26d9ca95cbbbb25280bf17d83172792d2a597e874ab \
+  --da.endpoint rpc.celestia.pops.one:26657
 ```
 
 Notes: Please replace `--da.endpoint` accordingly, the one provided above is only used as an example. Do not rely on the endpoint above for production deployments. We strongly advise to use a production ready endpoint or run your own Celestia light node.
@@ -72,6 +72,6 @@ docker run -d \
   --log.file.max-files=0 \
   --disable-discovery \
   --trusted-only \
-  --trusted-peers enode://7a4fde5f5eb926767730dace9f99e10a4060d5c62fc82a27b42a4684d99422f0bb80d418d1c524587d67e21c24a064c775f61ca0b92ebf5fb3aa172a9eda1c2a@34.40.24.94:30303 \
-  --abc.sequencer-http https://rpc.basecamp.t.raas.gelato.cloud
+  --trusted-peers enode://844d50728ccd7e4411d29c6e14642ce65c42c70bd924170041f01b8244789eb383c03bbcb4248fe4a67abaceffe398ec5e0cb93c4e656d82dd5f34f458b9622c@34.12.126.11:30303 \
+  --abc.sequencer-http https://rpc.camp.raas.gelato.cloud
 ```
