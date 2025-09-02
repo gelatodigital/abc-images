@@ -7,28 +7,8 @@ ABC Stack follows the same design and architecture an Ethereum, using Engine API
 
 ### Prerequisites
 
-- GitHub Personal Access Token (PAT)
 - Install [Docker](https://docs.docker.com/get-docker/)
 
-## Restricted Access
-
-### Generate a GitHub Personal Access Token (PAT)
-	1.	Go to https://github.com/settings/tokens
-	2.	Click “Generate new token (classic)” (or use fine-grained tokens if preferred)
-	3.	Give it a name and expiration date
-	4.	Under Scopes, select:
-	    •	read:packages (required to pull images)
-	    •	repo
-	5.	Click Generate token
-	6.	Copy and save the token somewhere safe
-
-### Login to GHCR via Docker
-```bash
-echo <YOUR_PAT> | docker login ghcr.io -u <GITHUB_USERNAME> --password-stdin
-```
-Replace:
-	•	<YOUR_PAT> with your GitHub personal access token
-	•	<GITHUB_USERNAME> with your GitHub username
 
 ### Pull the images
 
@@ -36,7 +16,6 @@ Replace:
 docker pull ghcr.io/gelatodigital/abc
 docker pull ghcr.io/gelatodigital/xyz
 ```
-
 
 ## Running with Docker
 
